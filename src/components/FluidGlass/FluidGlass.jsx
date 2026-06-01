@@ -221,7 +221,7 @@ function Images() {
   const { height } = useThree(s => s.viewport);
 
   useFrame(() => {
-    if(group.current && group.current.children.length > 4) {
+    if (group.current && group.current.children.length > 4) {
       group.current.children[0].material.zoom = 1 + data.range(0, 1 / 3) / 3;
       group.current.children[1].material.zoom = 1 + data.range(0, 1 / 3) / 3;
       group.current.children[2].material.zoom = 1 + data.range(1.15 / 3, 1 / 3) / 2;
@@ -233,10 +233,10 @@ function Images() {
   return (
     <group ref={group}>
       <Image position={[-2, 0, 0]} scale={[3, height / 1.1, 1]} url="/profile.jpg" />
-      <Image position={[2, 0, 3]} scale={3} url="/profile.jpg" />
-      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/profile.jpg" />
+      <Image position={[2, 0, 3]} scale={3} url="/star.jpg" />
+      <Image position={[-2.05, -height, 6]} scale={[1, 3, 1]} url="/ranon.jpg" />
       <Image position={[-0.6, -height, 9]} scale={[1, 2, 1]} url="/profile.jpg" />
-      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/profile.jpg" />
+      <Image position={[0.75, -height, 10.5]} scale={1.5} url="/dragon.jpg" />
     </group>
   );
 }

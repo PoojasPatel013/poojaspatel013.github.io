@@ -4,13 +4,13 @@ import BlurText from '../BlurText/BlurText';
 const HeroSection = () => {
   return (
     <section id="about" className="snap-section relative flex flex-col md:flex-row items-center justify-center px-6 md:px-12 w-full max-w-7xl mx-auto gap-12 md:gap-24 mb-32 z-10 min-h-[80vh]">
-      
+
       {/* Left Side (Photo) */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-16 md:mt-0">
         <div className="relative w-64 h-64 md:w-96 md:h-96">
-          <img 
-            src="/profile.jpg" 
-            alt="Pooja Patel" 
+          <img
+            src="/profile.jpg"
+            alt="Pooja Patel"
             className="w-full h-full object-cover rounded-3xl"
             style={{ boxShadow: '0 0 0 2px rgba(168,85,247,0.4), 0 20px 60px rgba(147,51,234,0.3)' }}
           />
@@ -22,12 +22,12 @@ const HeroSection = () => {
       {/* Right Side (Typography) */}
       <div className="w-full md:w-1/2 flex flex-col justify-center">
         <h1 className="font-outfit text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8" style={{ color: '#1e293b' }}>
-          Pooja<br/>Patel<span style={{ color: '#d946ef' }}>.</span>
+          Pooja<br />Patel<span style={{ color: '#d946ef' }}>.</span>
         </h1>
-        
+
         <div className="max-w-2xl font-inter text-lg md:text-xl leading-relaxed font-light tracking-tight flex flex-wrap" style={{ color: '#475569' }}>
-          <BlurText 
-            text="Computer Science undergraduate and aspiring Applied ML Systems Researcher with a robust foundation in core CS fundamentals, distributed architectures, and cybersecurity."
+          <BlurText
+            text="Computer Science graduate and aspiring Applied ML Systems Researcher with a robust foundation in core CS fundamentals, distributed architectures, and cybersecurity."
             animateBy="words"
             direction="bottom"
             delay={80}

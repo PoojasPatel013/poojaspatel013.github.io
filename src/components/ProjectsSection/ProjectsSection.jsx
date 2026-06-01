@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollStack, { ScrollStackItem } from '../ScrollStack/ScrollStack';
+import ScrollStack from '../ScrollStack/ScrollStack';
 
 const ProjectsSection = () => {
   const PROJECTS = [
@@ -8,18 +8,28 @@ const ProjectsSection = () => {
       header: '01 - Cybersecurity',
       title: 'NETRA v2',
       subtitle: 'AI-Native Asset Discovery Engine',
+      github: 'https://github.com/PoojasPatel013/netra',
     },
     {
       id: 'oasis',
       header: '02 - AI Documentation',
       title: 'OASIS',
       subtitle: 'Self-Healing Documentation Engine',
+      github: 'https://github.com/PoojasPatel013/Ai-for-bharat-2026',
     },
     {
       id: 'disaster',
       header: '03 - ML Platform',
       title: 'Disaster Risk Prediction',
       subtitle: 'End-to-End ML Platform for Risk Modeling',
+      github: '#', // TODO: add your GitHub repo URL
+    },
+    {
+      id: 'proxy',
+      header: '04 - AI Agents',
+      title: 'Proxy',
+      subtitle: 'Swarm-Powered AI Matchmaking Engine',
+      github: 'https://github.com/PoojasPatel013/Proxy', // TODO: add your GitHub repo URL
     },
   ];
 
@@ -30,7 +40,7 @@ const ProjectsSection = () => {
           Systems I've Built<span style={{ color: '#d946ef' }}>.</span>
         </h2>
       </div>
-      
+
       {/* Scroll Stack using framer-motion's useScroll and sticky positioning for flawless performance */}
       <ScrollStack projects={PROJECTS} />
     </section>

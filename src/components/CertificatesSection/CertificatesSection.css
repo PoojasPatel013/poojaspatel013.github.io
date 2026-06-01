@@ -1,0 +1,49 @@
+/* ============================================================
+   CertificatesSection.css — Shimmer + badge animations
+   ============================================================ */
+
+/* Badge icon shimmer sweep */
+@keyframes cert-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.cert-badge-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 70, 239, 0.2) 0%,
+    rgba(192, 132, 252, 0.6) 50%,
+    rgba(217, 70, 239, 0.2) 100%
+  );
+  background-size: 200% 100%;
+  animation: cert-shimmer 3s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle floating animation for badge icons */
+@keyframes cert-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.cert-float {
+  animation: cert-float 4s ease-in-out infinite;
+}
+
+/* Glow pulse on hover */
+.cert-card-glow:hover {
+  box-shadow:
+    0 8px 32px rgba(192, 132, 252, 0.25),
+    0 0 0 1px rgba(217, 70, 239, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}

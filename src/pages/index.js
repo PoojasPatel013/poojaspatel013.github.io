@@ -6,6 +6,7 @@ import HeroSection from '../components/HeroSection/HeroSection';
 import SkillsSection from '../components/SkillsSection/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
+import CertificatesSection from '../components/CertificatesSection/CertificatesSection';
 import ContactSection from '../components/ContactSection/ContactSection';
 import FluidGlass from '../components/FluidGlass/FluidGlass';
 
@@ -48,6 +49,7 @@ const IndexPage = () => {
         )}
 
         <ExperienceSection />
+        <CertificatesSection />
         <ContactSection />
       </main>
     </>

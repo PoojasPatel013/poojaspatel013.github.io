@@ -186,11 +186,11 @@ const ContactSection = () => {
                 letterSpacing: '0.01em',
               }}
             >
-              The systems we build today
+              remember to look up
               <br />
-              <span style={{ color: '#c084fc' }}>become the architecture</span>
+              <span style={{ color: '#c084fc' }}>to the stars and</span>
               <br />
-              of tomorrow's intelligence.
+              not at your feet
             </p>
 
             <footer className="mt-6">
@@ -205,7 +205,7 @@ const ContactSection = () => {
                   display: 'block',
                 }}
               >
-                — Pooja Patel
+                — Stephen Hawking
               </cite>
               <div className="mt-2 h-px w-16" style={{ background: 'linear-gradient(90deg, #d946ef, transparent)' }} />
             </footer>
